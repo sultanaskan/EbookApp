@@ -1,0 +1,35 @@
+body{
+	background-color: rgb(233, 233, 233);
+}
+.bg-custom{
+	background-color: rgb(26, 35, 126);
+}
+
+.navbar .collapse .nav-item:hover .nav-link{
+	background-color: white;
+	color: rgb(26, 35, 126);
+	border-radius: 3px;
+	
+}
+.back-img{
+	background-image: url(img/bg.png);
+	height: 40vh;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	color: white;
+	}
+
+.card-ho:hover{
+	background-color: rgb(234, 255, 238);
+}
+
+.bbtn a{
+	font-size: 7px;
+	width: 70px;
+}
+.container a{
+	text-decoration: none;
+	color: black;
+}
