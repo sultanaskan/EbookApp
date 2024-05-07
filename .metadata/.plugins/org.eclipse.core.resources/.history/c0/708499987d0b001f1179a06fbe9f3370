@@ -1,0 +1,48 @@
+<%@page import="com.entity.Cart"%>
+<%@page import="com.entity.Book"%>
+<%@page import="java.util.List"%>
+<%@page import="com.DAO.DBconn"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ page isELIgnored="false"%>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>New Book:</title>
+<%@include file="components/allcss.jsp"%>
+
+
+</head>
+<body>
+	<%@include file="components/navbar.jsp"%>
+
+
+	<div class="container">
+		<div class="card">
+			<div class="card-body">
+			<img class="rounded border h-10 w-10" alt="" src="">
+			<img alt="" src="">;alkjsdf;lkajsd;fkjas;kfjas;lkj;akjg;lkaj;ldkjfa;slkdjf;laskjd;lkajd
+			</div>
+		</div>
+
+	</div>
+
+
+
+	<br>
+
+
+
+
+
+
+
+
+
+	<%@include file="components/footer.jsp"%>
+</body>
+</html>

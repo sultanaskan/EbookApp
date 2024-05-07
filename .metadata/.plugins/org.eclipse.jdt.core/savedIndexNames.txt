@@ -1,0 +1,18 @@
+INDEX VERSION 1.134+D:\All projects\java web - all backup\.metadata\.plugins\org.eclipse.jdt.core
+1125088818.index
+2568592202.index
+4139241218.index
+778074004.index
+309324795.index
+4042125929.index
+940547224.index
+2229335884.index
+2092830568.index
+2055088015.index
+3904877812.index
+1872734651.index
+3308231.index
+3984804955.index
+1865797976.index
+1912466751.index
+3413725848.index

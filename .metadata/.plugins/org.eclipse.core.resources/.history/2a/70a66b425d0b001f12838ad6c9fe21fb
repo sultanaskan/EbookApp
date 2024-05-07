@@ -1,0 +1,29 @@
+<%@page import="java.sql.Connection"%>
+<%@page import="com.entity.*"%>
+<%@page import="java.util.List"%>
+<%@page import="com.DAO.DAOImpl"%>
+<%@page import="com.DAO.DBconn"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Index page</title>
+<%@include file="components/allcss.jsp"%>
+
+
+</head>
+<body>
+
+<%Connection dbconn =  DBconn().getConn();
+if(dbconn != null){
+	
+	System.out.println("Connection successfull");
+}else{
+	System.out.println(d);
+}
+
+%>

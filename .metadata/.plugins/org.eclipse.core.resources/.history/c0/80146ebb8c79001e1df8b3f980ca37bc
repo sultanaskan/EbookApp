@@ -1,0 +1,48 @@
+
+
+const derectionfornewuser = document.getElementById("derectionfornewuser");
+
+
+
+/* Open sidebar */
+function openSidebar() {
+	mysidebar.style.width = "160px";
+}
+
+
+/* close sidebar*/
+function closeSidebar() {
+	mysidebar.style.display = "flex";
+	mysidebar.style.width = "0";
+
+}
+
+
+
+
+
+function loadhtm() {
+	content.remove();
+	fetch("matchentryoptions.jsp").then(response => response.text()).then(data => {
+		content.innerHTML = data;
+	}).catch(error => {
+		console.error("Error loading HTML content:", error);
+	});
+};
+
+
+/*remove all siblings from main div*/
+    function removeSiblings(main) {
+
+    	var parentElement = document.getElementById(main);
+
+    	// Loop through and remove all sibling elements.
+    	while (parentElement.firstChild) {
+    		parentElement.removeChild(parentElement.firstChild);
+    	}}
+    	/*remove all siblings from main div*/
+
+
+
+
+

@@ -1,0 +1,12 @@
+package com.DAO;
+
+public class DAOImp implements DAO{
+	Dbconn conn= new Dbconn();
+
+	@Override
+	public boolean MbRegister() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

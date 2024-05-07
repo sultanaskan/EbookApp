@@ -1,0 +1,88 @@
+<%@page import="java.util.List"%>
+<%@page import="com.DAO.DBconn"%>
+<%@page import="com.entity.*"%>
+<%@page import="com.DAO.DAOImpl"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Your carts</title>
+<%@include file="components/allcss.jsp"%>
+</head>
+<body>
+	<%@include file="components/navbar.jsp"%>
+	<%
+	DAOImpl dao = new DAOImpl(DBconn.getConn());
+	List<Cart> list =dao.getCartDtls();
+	System.out.println("Cart list is: "+ list);
+	%>
+
+
+
+
+
+	<div class="container-fluid  bg-light text-center">
+		<div class="row">
+			<div class="col-lg-6 my-2">
+				<table class="table">
+					<h1 class="text-warning">Cart Details</h1>
+					<thead class="table-warning">
+						<tr>
+							<th>Book Name</th>
+							<th>Author Name</th>
+							<th>Price</th>
+							<th>Categories</th>
+							<th>Seller</th>
+							<th>Action</th>
+						</tr>
+					</thead>
+					<tbody class="table-light">
+
+					<%for(Cart c : list){ %>
+						<tr>
+							<td><%= %></td>
+							<td>lakjdf</td>
+						</tr>
+						
+						<%} %>
+
+
+
+
+					</tbody>
+				</table>
+
+			</div>
+
+
+
+			<div class="col-lg-6 my-2">
+				<table class="table">
+					<h1 class="text-success">Your Address</h1>
+					<thead class="table-dark">
+						<tr>
+							<th>Book Name</th>
+							<th>Author Name</th>
+							<th>Price</th>
+							<th>Categories</th>
+							<th>Seller</th>
+							<th>Action</th>
+						</tr>
+					</thead>
+					<tbody class="table-light">
+						<tr>
+							<td>lakjdf</td>
+							<td>lakjdf</td>
+						</tr>
+					</tbody>
+				</table>
+
+			</div>
+		</div>
+	</div>
+
+	<%@include file="components/footer.jsp"%>
+</body>
+</html>

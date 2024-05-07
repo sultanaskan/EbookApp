@@ -1,0 +1,52 @@
+<div id="matchcreate" class="container">
+	<div class="banner">
+		<h3 id="msg">You can send Join request to join Others Match</h3>
+		<button id="togglebtn" class="button">Join</button>
+	</div>
+
+
+	<div id="creatematch" class="tgl-form-container">
+		<h1 id="formheader">Join to the match</h1>
+		<form action="loginSertlet" id="loginForm">
+			<input type="text" placeholder="Hostel name" autofocus="autofocus">
+			<input type="text" placeholder="Hostel Address" autofocus="autofocus">
+			<input type="submit" value="Next">
+		</form>
+	</div>
+	
+	<div id="jointothematch"  style="display: none;"class="tgl-form-container">
+		<h1 id="formheader">Create New Match</h1>
+		<form action="loginSertlet" id="loginForm">
+			<input type="text" placeholder="Hostel name" autofocus="autofocus">
+			<input type="text" placeholder="Hostel Address" autofocus="autofocus">
+			<input type="submit" value="Next">
+		</form>
+	</div>
+
+
+
+
+</div>
+
+
+<script>
+      const formheader = document.getElementById("formheader");
+      const formContainer = document.getElementById("form-container");
+      const msg = document.getElementById("msg");
+      const togglebtn = document.getElementById("togglebtn");
+
+      togglebtn.addEventListener("click", () => {
+        if (formheader.textContent === "Create New Match") {
+          togglebtn.textContent = "Create";
+          formheader.textContent = "Join in Match";
+        } else {
+          togglebtn.textContent = "Join";
+          formheader.textContent = "Create New Match";
+        }
+      });
+    </script>
+
+
+
+
+

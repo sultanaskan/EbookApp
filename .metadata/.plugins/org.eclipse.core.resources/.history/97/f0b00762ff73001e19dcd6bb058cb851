@@ -1,0 +1,27 @@
+package com.DAO;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class DBconn {
+
+	private static Connection conn = null;
+	private static String url1= "jdbc:mysql://localhost:3306/ebook";
+	private static String url2= "jdbc:mariadb://localhost:3307/ebook";
+	private static String user= "root";
+	private static String password = "root";
+	public static  Connection getConn() {
+		try {
+			Class.forName("org.mariadb.cj.jdbc.Driver");
+			
+			conn= DriverManager.getConnection(url1, );			
+			
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return conn;
+		
+	}
+
+}

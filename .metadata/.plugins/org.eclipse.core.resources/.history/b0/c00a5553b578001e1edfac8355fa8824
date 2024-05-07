@@ -1,0 +1,20 @@
+<div class="hompageprimsg" id="hompageprimsg">
+	<h1>
+		Still your are not match member you can join your match
+		<button id="creatematchbtn" onclick="gocreactematch()" class="button">Join</button>
+		or you can create a new match
+		<button onclick="gocreactematch()" id="joinmatchbtn" class="button">Create</button>
+	</h1>
+</div>
+
+
+<script>
+	const creatematchbtn = document.getElementById("creatematchbtn");
+	const joinmatchbtn = document.getElementById("joinmatchbtn");
+	const hompageprimsg = document.getElementById("hompageprimsg");
+	
+	function gocreactematch(){
+		hompageprimsg.style.left= "200%";
+	}
+
+</script>

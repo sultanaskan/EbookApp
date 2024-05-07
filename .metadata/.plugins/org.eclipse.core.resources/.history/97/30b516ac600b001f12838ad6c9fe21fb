@@ -1,0 +1,26 @@
+package com.DAO;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class DBconn {
+
+	private  Connection conn = null;
+	private  String url2= "jdbc:mysql://localhost:3307/ebook";
+	private  String user= "root";
+	private  String password = "root";
+	public  Connection getConn() {
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			
+			conn= DriverManager.getConnection(url2, user, password );			
+			
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return conn;
+		
+	}
+
+}

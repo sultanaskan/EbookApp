@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Homepage</title>
+<%@ include file="globalcomps/css.jsp"%>
+<%@ include file="homecss.jsp"%>
+
+</head>
+<body>
+
+	<div class="home-container">
+		<!-- Navigation Bar -->
+		<%@ include file="navbar.jsp"%>
+		<%@ include file="sidebar.jsp"%>
+		<!-- Content Area with Centered Buttons -->
+
+
+		<div class="main">
+			<%@ include file="hompageprimsg.jsp" %>
+			
+			<%@include file="creatematch.jsp"%>
+
+
+		</div>
+	</div>
+
+
+
+
+
+	<script>
+		const mysidebar = document.getElementById("mySidebar");
+		function openSidebar() {
+			mysidebar.style.width = "160px";
+		}
+
+		function closeSidebar() {
+			mysidebar.style.width = "0";
+		}
+	</script>
+
+
+</body>
+</html>

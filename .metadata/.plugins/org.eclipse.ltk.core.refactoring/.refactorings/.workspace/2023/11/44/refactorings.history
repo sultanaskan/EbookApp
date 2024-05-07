@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;shms/src/main/webapp/homecss.jsp&apos;" deleteContents="false" description="Delete resource &apos;shms/src/main/webapp/homecss.jsp&apos;" element1="/shms/src/main/webapp/homecss.jsp" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1698928380710"/>
+</session>

@@ -1,0 +1,9 @@
+<div class="derectionfornewuser" id="derectionfornewuser">
+	<h1>
+		Still your are not match member you can join your match
+		<button id="creatematchbtn"  onclick="loadcontent(), " class="button">Join</button>
+		or you can create a new match
+		<button onclick="loadcontent()" id="joinmatchbtn" class="button">Create</button>
+	</h1>
+</div>
+

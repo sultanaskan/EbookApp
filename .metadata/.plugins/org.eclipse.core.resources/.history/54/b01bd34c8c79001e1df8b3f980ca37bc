@@ -1,0 +1,10 @@
+/*remove all siblings from main div*/
+    function removeSiblings(main) {
+
+    	var parentElement = document.getElementById(main);
+
+    	// Loop through and remove all sibling elements.
+    	while (parentElement.firstChild) {
+    		parentElement.removeChild(parentElement.firstChild);
+    	}}
+    	/*remove all siblings from main div*/

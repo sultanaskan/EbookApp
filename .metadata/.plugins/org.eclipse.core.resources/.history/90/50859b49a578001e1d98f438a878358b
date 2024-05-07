@@ -1,0 +1,62 @@
+<div id="matchcreate" class="container">
+	<div class="banner">
+		<h3 id="msg">You can send Join request to join Others Match</h3>
+		<button id="togglebtn" class="banner-button">Create</button>
+	</div>
+
+
+	<div id="joininmatch" class="form-container">
+		<h1 id="formheader">Select match and send Join request</h1>
+		<form action="loginSertlet" id="loginForm">
+			<input type="text" placeholder="select hostel" autofocus="autofocus">
+			<input type="submit" value="Next">
+		</form>
+	</div>
+
+	<div id="creatematch" style="display: none;" class="form-container">
+		<h1 id="formheader">Create New Match</h1>
+		<form action="loginSertlet" id="loginForm">
+			<select id="fruitSelect">
+				<option value="apple">Apple</option>
+				
+			</select> <input type="submit" value="Next">
+		</form>
+	</div>
+
+
+
+
+
+</div>
+
+
+<script>
+      const formheader = document.getElementById("formheader");
+      const formContainer = document.getElementById("form-container");
+      const msg = document.getElementById("msg");
+      const togglebtn = document.getElementById("togglebtn");
+      const joininmatch = document.getElementById("joininmatch");
+      const creatematch = document.getElementById("creatematch");
+
+      togglebtn.addEventListener("click", () => {
+        if (formheader.textContent === "Create New Match") {
+          togglebtn.textContent = "Create";
+          formheader.textContent = "Select match and send Join request";
+          joininmatch.style.display="block";
+          creatematch.style.display="none";
+          
+          
+        } else {
+          togglebtn.textContent = "Join";
+          formheader.textContent = "Create New Match";
+          togglebtn.textContent = "Join";
+          joininmatch.style.display="none";
+          creatematch.style.display="block";
+        }
+      });
+    </script>
+
+
+
+
+

@@ -1,0 +1,66 @@
+
+<!-- Match Entry and create options -->
+<div id="joinorcreatematch" class="main">
+
+
+	<div id="joinform" >
+		<div class="banner joinorcreatematchbanner">
+			<h3 id="banner-text">You can send Join request to join Others
+				Match</h3>
+			<button onclick="formtoggle('joinform', 'createform')"  id="togglebtn" class="banner-button">Create</button>
+		</div>
+
+		<div id="joininmatch" class="form-container">
+			<h1 id="formheader">Select match and send Join request</h1>
+			<form action="loginSertlet" id="loginForm">
+				<select id="matchlist" class="matchlist">
+					<option value="apple">Apple</option>
+				</select> <input type="submit" value="Send Request">
+			</form>
+		</div>
+	</div>
+
+
+
+	<div id="createform" style="display: none;">
+		<div class="banner joinorcreatematchbanner">
+			<h3 id="banner-text">You can send Join request to join Others
+				Match</h3>
+			<button onclick="formtoggle('createform', 'joinform')" id="togglebtn" class="banner-button">join</button>
+		</div>
+
+
+		<div id="creatematch"  class="form-container">
+			<h1 id="formheader">Create New Match</h1>
+			<form action="loginSertlet" id="loginForm">
+				<input type="text" placeholder="hostel name" autofocus="autofocus">
+				<input type="text" placeholder="Hostel address"
+					autofocus="autofocus"> <input type="submit" value="Next">
+			</form>
+		</div>
+	</div>
+
+
+	<script type="text/javascript">
+		function formtoggle(existsformId, newformId){
+			var existsform= document.getElementById(existsformId);
+			var newform= document.getElementById(newformId);
+			
+			existsform.style.displey= "none";
+			newform.style.display="block";
+			
+		}
+	</script>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+

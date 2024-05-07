@@ -1,0 +1,45 @@
+package com.servlet;
+
+import java.io.IOException;
+import java.sql.Connection;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.DAO.DAOImpl;
+import com.db.Database;
+
+@WebServlet("order")
+public class OrderServlet extends HttpServlet{
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		Connection conn = new Database().Dbconn();
+		int o_id;
+		int c_id;
+		int b_id;
+		int s_id;
+		
+		try {
+			o_id = Integer.parseInt(req.getParameter("o_id"));
+			c_id = Integer.parseInt(req.getParameter("c_id"));
+			b_id = Integer.parseInt(req.getParameter("b_id"));
+			s_id = Integer.parseInt(req.getParameter("s_id"));
+			
+			
+			DAOImpl dao = new DAOImpl(conn);
+			Order o =new Order(o_id, c_id, b_id, s_id);
+			dao.saveOrder();
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		
+		
+	}
+
+}

@@ -1,0 +1,18 @@
+package com.DAO;
+
+import java.sql.Connection;
+
+public class DAOImp implements DAO{
+	Dbconn conn= new Dbconn();
+	public Connection DAOImp(Connection conn) {
+		conn=(Connection) this.conn;
+		return conn;
+	}
+
+	@Override
+	public boolean MbRegister() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

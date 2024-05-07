@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Hostel Management System</title>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+<%@ include file="globalcomps/css.jsp"%>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+<body>
+
+
+	<div id="container" class="container">
+		<!-- 
+		     </%@ include file="justuser.jsp"%>
+			 -->
+		<%@ include file="admin/deshboard.jsp"%>
+
+
+		<div id="content"></div>
+		<script type="text/javascript">
+			
+			
+			
+			
+			 var content = document.getElementById("content");
+                 function oadcontent() {
+                	 removeSiblings('main');
+                	 
+                    fetch("matchentryoptions.jsp").then(response => response.text()).then(data => {
+                            content.innerHTML = data;}) .catch(error => {
+                                console.error("Error loading HTML content:", error);
+                        });                    
+                };
+                
+               
+                </script>
+
+	</div>
+
+
+
+	<script src="script.js"></script>
+
+	<div class="floatedDiv"
+		style="">hell
+		lkajsdf;lkjasd;lfkjalksdjflko</div>
+
+
+</body>
+</html>

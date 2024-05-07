@@ -1,0 +1,26 @@
+package com.DAO;
+import java.sql.Connection;
+import com.Entity.*;
+
+public class DAOImp implements DAO{
+	Dbconn conn= new Dbconn();
+	public Connection DAOImp(Connection conn) {
+		conn=(Connection) this.conn;
+		return conn;
+	}
+
+	@Override
+	public boolean MbRegister(mborders b) {
+		boolean r= false;
+		int mbid = b.getMbid();
+		int mid = b.getMid();
+		String mbnam = b.getMbnam();
+		String mbpho= b.getMbpho();
+		String mbmai =b.getMbmai();
+		String mbpas= b.getMbpass();
+		String mbadd= b.getMbadd();
+		
+		return r;
+	}
+
+}

@@ -1,0 +1,614 @@
+:root {
+	--lightHover: rgba(0, 255, 128, 0.3);
+	--darkHover: rgb(64, 128, 128);
+	--text-color: #333;
+	--accent-color: #e74c3c;
+}
+
+
+/* Start home Container section */
+body {
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+	overflow-x: visible;
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+}
+
+.container {
+
+	border-radius: 5px;
+	border: 1px solid black;
+	max-width: 1200px;
+	box-sizing: border-box;
+	display: flex;
+	width: 100%;
+	transition: 0.3s;
+	height: auto;
+	max-height: 1200px;
+	flex-direction: column;
+	top: 0;
+	z-index: 1;
+	margin-top: 0px;
+	overflow-x: hidden;
+
+}
+
+.container1 {
+
+	border-radius: 5px;
+	border: 1px solid green;
+	width: 100%;
+
+	box-sizing: border-box;
+	display: flex;
+	width: 100%;
+	transition: 0.3s;
+	flex-direction: row;
+	overflow: hidden;
+	top: 0;
+	z-index: 1;
+
+}
+
+.main {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	transition: 0.3s;
+	height: 100%;
+	flex-direction: row;
+	top: 0;
+	text-align: center;
+	overflow-x: visible;
+
+
+}
+
+.quickAccessBar {
+	position: relative;
+	display: flex;
+	height: 100%;
+	width: 100%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	flex: 3;
+	padding: 10px;
+	overflow-y: auto;
+}
+
+.mainView {
+	position: relative;
+	display: flex;
+	height: 100%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	flex: 7;
+	flex-direction: column;
+	padding: 10px;
+	overflow-y: scroll;
+}
+
+
+.overView {
+	position: relative;
+	display: flex;
+	height: 100%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	flex: 7;
+	flex-direction: column;
+	padding: 10px;
+	background-color: transparent;
+
+}
+
+.overViewRow {
+
+
+	width: 100%;
+	max-width: 1000px;
+	box-sizing: border-box;
+	display: flex;
+	width: 100%;
+	transition: 0.3s;
+	height: auto;
+	flex-direction: column;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+
+	position: relative;
+	flex: 1;
+	flex-direction: row;
+	text-align: center;
+	align-items: center;
+	z-index: 1;
+	margin: 4px;
+	background-color: transparent;
+}
+
+.overViewCell {
+	display: flex;
+	position: relative;
+	flex: 1;
+	margin: 2px;
+	z-index: 3;
+	height: 100%;
+	font-size: 15px;
+	border: 2px solid rgba(0, 0, 0, 0.2);
+	border-radius: 5%;
+	overflow: visible;
+
+
+
+}
+
+.cellElement {
+	display: block;
+	position: relative;
+	flex: 1;
+	margin: 2px;
+	z-index: 3;
+	height: 100%;
+	font-size: 15px;
+	border-radius: 5%;
+	z-index: 1;
+	background-color: rgba(255, 255, 128, 0.2);
+}
+
+.lastTransactions {
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	position: relative;
+	display: flex;
+	height: 100%;
+	flex: 7;
+	flex-direction: column;
+	padding: 20px;
+	overflow-y: scroll;
+
+}
+
+.bottom-nav {
+	position: fixed;
+	bottom: 0%;
+	justify-content: center;
+	z-index: 5;
+	align-self: center;
+	align-items: baseline;
+	background-color: rgb(40, 40, 40);
+	color: #fff;
+	padding: 0px;
+	height: 50px;
+	max-width: 400px;
+	border-radius: 30px 30px 0px 0px;
+	padding-bottom: auto;
+
+
+}
+
+
+/* Style the list inside the navigation bar */
+.bottom-nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	
+	justify-content: space-around;
+}
+
+/* Style the list items */
+.bottom-nav li {
+	padding: 10px;
+	margin-bottom: 50px;
+	
+}
+
+/* Style the links */
+.bottom-nav a {
+
+}
+
+/* Change link color on hover */
+.bottom-nav a:hover {
+	color: #ffcc00;
+}
+
+
+.flex-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-item {}
+
+
+
+.title {
+	justify-content: space-between;
+	align-items: center;
+	background-color: #333;
+	color: #fff;
+	margin: 0px;
+	text-align: center;
+
+}
+
+.title h2 {
+	margin: 0px;
+	font-size: 20x;
+	text-align: center;
+}
+
+
+
+.bgicon {
+	height: 100%;
+	width: 100%;
+	opacity: 8%;
+	z-index: 0;
+	position: absolute;
+	left: 0px;
+	color: green;
+
+}
+
+.btnicon {
+	color: white;
+	width: 40px;
+	height: 40px;
+	position: relative;
+	top: 0px;
+	margin: 0px;
+	fill: white;
+	transition: 0.5s;
+	
+}
+.btnicon:hover {
+	fill: rgb(0, 255, 64);
+	
+}
+
+.balance {
+	text-decoration: double;
+	justify-content: center;
+	align-self: center;
+	margin: 5px;
+	color: rgb(0, 0, 64);
+
+	box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+
+/* Navigation bar styles */
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #333;
+	color: #fff;
+	padding: 5px;
+	position: sticky;
+	top: 0;
+
+
+}
+
+.profile-icon {
+	width: 40px;
+	height: 40px;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+.menu-icon {
+	font-size: 30px;
+	cursor: pointer;
+	display: none;
+}
+
+.nav-menu {
+	display: flex;
+	align-items: start;
+	justify-content: space-between;
+}
+
+.nav-menu a {
+	text-decoration: none;
+	color: white;
+	padding: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 0px;
+	margin-right: 0px;
+	font-size: 15px;
+	background-color: rgb(128, 128, 128);
+}
+
+.nav-menu a:hover {
+	text-decoration: none;
+	color: rgb(0, 0, 255);
+
+}
+
+
+
+/* Sidebar styles */
+.sidebar {
+	width: 0;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #333;
+	overflow-x: hidden;
+	transition: 0.2s;
+	display: flex;
+	align-items: left;
+	padding-top: 60px;
+	flex-direction: column;
+	padding-top: 60px;
+	z-index: 5;
+}
+
+.sidebar a {
+	padding: 10px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #fff;
+	transition: 0.3s;
+}
+
+.sidebar a:hover {
+	color: #007BFF;
+}
+
+.close-btn {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 20px;
+	color: #fff;
+	cursor: pointer;
+}
+
+/* End home Container section */
+
+
+.justuser {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+	transition: 0.3s;
+}
+
+
+
+
+.overViewBox {
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	background-size: cover;
+}
+
+
+
+.btn2 {
+	background-color: rgb(128, 128, 128);
+	color: #fff;
+	border: none;
+	border-radius: 10px;
+	font-size: 15px;
+	padding: 0px;
+	height: 20px;
+	width: 60px;
+	text-align: center;
+	text-decoration: none;
+	display: inline;
+	transition: 0.5s;
+	float: right;
+	margin: 5px
+}
+
+.btn2:hover {
+	background-color: var(--darkHover);
+}
+
+.btn3 {
+	position: relative;
+	color: #fff;
+	font-weight: bold;
+	align-self: center;
+	border: 0px;
+	top: 0%;
+	border-radius: 50%;
+	background-color: transparent;	
+	transition: 0.5s;
+	
+
+
+.banner {
+	flex: 2;
+	background-image: url("appimgs/welcomebg.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: center;
+	padding: 20px;
+	color: white;
+	transition: 0.5s;
+	flex-direction: column;
+}
+
+.banner-content {
+	padding: 5px;
+	text-align: right;
+}
+
+
+
+.banner-button {
+	display: inline-block;
+	padding: 3px 3px;
+	background-color: #007BFF;
+	color: #fff;
+	text-decoration: none;
+	border: none;
+	border-radius: 5px;
+}
+
+.banner-button:hover {
+	background-color: #0056b3;
+	transition: 0.3s;
+}
+
+.form-container {
+	flex: 5;
+	padding: 20px;
+	transition: all 0.3s;
+	/* Add the transition property */
+}
+
+h2 {
+	text-align: center;
+	font-size: 50px;
+}
+
+
+
+
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+input {
+	padding: 10px;
+	margin: 5px 0;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+input[type="submit"] {
+	background-color: #007BFF;
+	color: #fff;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #0056b3;
+}
+
+
+
+
+
+/* Define the zebra striping styles */
+table {
+	border-collapse: collapse;
+	width: 100%;
+	max-width: 800px;
+
+	/* You can adjust the maximum width as needed */
+}
+
+/* Style the table header row */
+table th {
+	background-color: rgba(51, 51, 51);
+	color: #fff;
+	font-weight: bold;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 25px;
+	transition: 0s;
+
+}
+
+
+/* Style the table rows */
+table tr:nth-child(even) {
+	background-color: rgb(128, 255, 128);
+	border: 1px solid #ccc;
+	transition: 0.5s;
+	overflow-x: hidden;
+	/* Even rows have a light background color */
+}
+
+table tr:nth-child(odd) {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	transition: 0.5s;
+	/* Odd rows have a white background color */
+}
+
+/* Style the table cells */
+table td {
+	padding: 8px;
+
+}
+
+/* Add hover effect to table rows */
+table tr:hover {
+	background-color: var(--lightHover);
+	margin: 10px;
+	padding: 100px;
+}
+
+
+
+@media (max-width : 500px) {
+	.container {
+		height: 600px;
+		flex-direction: column;
+	}
+
+	.container1 {
+		flex-direction: column;
+	}
+
+
+	.quickAccessBar {
+		order: 1;
+		flex: 0.5;
+		position: relative;
+		bottom: 0;
+
+	}
+
+	.banner {
+		flex: 1;
+	}
+
+	.form-container {
+		flex: 9;
+	}
+
+	.main {
+		height: 850px;
+		flex-direction: column;
+	}
+
+	.menu-icon {
+		display: flex;
+	}
+
+	.nav-menu {
+		display: none;
+	}
+
+}

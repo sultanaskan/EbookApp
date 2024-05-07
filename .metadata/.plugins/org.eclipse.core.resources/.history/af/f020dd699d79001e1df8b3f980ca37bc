@@ -1,0 +1,58 @@
+
+
+
+
+
+/* Open sidebar */
+function openSidebar() {
+	mysidebar.style.width = "160px";
+}
+
+
+/* close sidebar*/
+function closeSidebar() {
+	mysidebar.style.display = "flex";
+	mysidebar.style.width = "0";
+
+}
+
+
+
+
+
+function loadhtm() {
+	content.remove();
+	fetch("matchentryoptions.jsp").then(response => response.text()).then(data => {
+		content.innerHTML = data;
+	}).catch(error => {
+		console.error("Error loading HTML content:", error);
+	});
+};
+
+
+
+
+
+function removeAllSiblingsAndLoadNewContent(targetElementId, newContentUrl){
+	var targetElement = document.getElementById(targetElementId);
+	
+	if(targetElement){
+		while(targetElement.firstChild){
+			targetElement.removeChild(targetElement.firstChild);
+		}
+	
+	
+	fetch(newContentUrl)
+	.then(response => response.text())
+	.then(data =>{
+		targetElement.innerHTML =data;
+	})
+	.catch(error => {
+		console.error("Error loading HtMl content:", error);
+	});
+} else{
+	console.error("Target element not found.");
+}
+}
+
+

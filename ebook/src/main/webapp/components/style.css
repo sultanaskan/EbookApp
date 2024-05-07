@@ -1,0 +1,48 @@
+
+body{
+	background-color:#D6BB87;
+}
+.gcardbook{
+	height: 135px;
+	width: 100px;
+}
+.resentbook{
+	background-color: rgba(132, 151, 134,0.4);
+	border-radius: 10px;
+}
+
+.newbook{
+	background-color: rgba(148, 124, 145,0.4);
+	border-radius: 10px;
+}
+
+.oldbook{
+	background-color: rgba(155, 152, 130,.4);
+	border-radius: 10px;
+}
+.card {
+	background-color: rgba(255, 255, 223,0.3);
+	transition: 1s ease-in-out ;
+}
+.card{
+	background-color: white;
+}
+
+.navbar ul li{
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: rgba(0, 0, 68, .4);
+	border-radius: 4px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.navbar ul li:hover {
+	background-color:rgb(128, 0, 128);
+	transition: .3s ease-in-out;
+	color:rgb(0, 0, 64) !important;
+	border-radius: 4px;
+	
+}
+
+

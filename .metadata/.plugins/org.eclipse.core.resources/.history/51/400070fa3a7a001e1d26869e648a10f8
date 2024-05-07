@@ -1,0 +1,10 @@
+
+<div class="navbar">
+	<div id="threedot" class="menu-icon" onclick="openSidebar()">&#9776;</div>
+	<!-- Three-dot line button -->
+
+	<img class="profile-icon" src="profile-icon.png" alt="Profile Icon">
+	<!-- Profile icon -->
+
+</div>
+

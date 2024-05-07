@@ -1,0 +1,33 @@
+package com.DAO;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class DBconn {
+
+	private static Connection conn ;
+	private static String url2= "jdbc:mysql://localhost:3306/relief_distributor";
+	private static String user= "root";
+	private static  String password = "";
+	public static Connection getConn() {
+		
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		try {
+			conn= DriverManager.getConnection(url2, user, password );	
+			System.out.println(conn);
+			
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return conn;
+		
+	}
+
+}

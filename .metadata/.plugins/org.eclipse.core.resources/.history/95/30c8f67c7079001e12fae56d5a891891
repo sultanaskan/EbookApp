@@ -1,0 +1,6 @@
+ <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a> <!-- Close button -->
+        <a href="#">Menu Item 1</a>
+        <a href="#">Menu Item 2</a>
+        <a href="#">Menu Item 3</a>
+    </div>
